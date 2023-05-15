@@ -16,6 +16,11 @@
 		251B3D162A11EF5D00119B25 /* ColllectionTesttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B3D152A11EF5D00119B25 /* ColllectionTesttTests.swift */; };
 		251B3D202A11EF5D00119B25 /* ColllectionTesttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B3D1F2A11EF5D00119B25 /* ColllectionTesttUITests.swift */; };
 		251B3D222A11EF5D00119B25 /* ColllectionTesttUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B3D212A11EF5D00119B25 /* ColllectionTesttUITestsLaunchTests.swift */; };
+		251B3D302A121A3A00119B25 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 251B3D2F2A121A3A00119B25 /* SPIndicator */; };
+		251B3D332A121A4700119B25 /* Bluejay in Frameworks */ = {isa = PBXBuildFile; productRef = 251B3D322A121A4700119B25 /* Bluejay */; };
+		251B3D362A121A5A00119B25 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 251B3D352A121A5A00119B25 /* Reachability */; };
+		251B3D392A121A6A00119B25 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 251B3D382A121A6A00119B25 /* PopupView */; };
+		251B3D3D2A121B4400119B25 /* PrinterCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B3D3C2A121B4400119B25 /* PrinterCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,7 @@
 		251B3D1B2A11EF5D00119B25 /* ColllectionTesttUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColllectionTesttUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251B3D1F2A11EF5D00119B25 /* ColllectionTesttUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColllectionTesttUITests.swift; sourceTree = "<group>"; };
 		251B3D212A11EF5D00119B25 /* ColllectionTesttUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColllectionTesttUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		251B3D3C2A121B4400119B25 /* PrinterCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251B3D392A121A6A00119B25 /* PopupView in Frameworks */,
+				251B3D302A121A3A00119B25 /* SPIndicator in Frameworks */,
+				251B3D362A121A5A00119B25 /* Reachability in Frameworks */,
+				251B3D332A121A4700119B25 /* Bluejay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,7 @@
 				251B3D072A11EF5D00119B25 /* Assets.xcassets */,
 				251B3D092A11EF5D00119B25 /* LaunchScreen.storyboard */,
 				251B3D0C2A11EF5D00119B25 /* Info.plist */,
+				251B3D3C2A121B4400119B25 /* PrinterCategory.swift */,
 			);
 			path = ColllectionTestt;
 			sourceTree = "<group>";
@@ -143,6 +154,12 @@
 			dependencies = (
 			);
 			name = ColllectionTestt;
+			packageProductDependencies = (
+				251B3D2F2A121A3A00119B25 /* SPIndicator */,
+				251B3D322A121A4700119B25 /* Bluejay */,
+				251B3D352A121A5A00119B25 /* Reachability */,
+				251B3D382A121A6A00119B25 /* PopupView */,
+			);
 			productName = ColllectionTestt;
 			productReference = 251B3CFB2A11EF5C00119B25 /* ColllectionTestt.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,14 @@
 				Base,
 			);
 			mainGroup = 251B3CF22A11EF5C00119B25;
+			packageReferences = (
+				251B3D2E2A121A3A00119B25 /* XCRemoteSwiftPackageReference "SPIndicator" */,
+				251B3D312A121A4700119B25 /* XCRemoteSwiftPackageReference "bluejay" */,
+				251B3D342A121A5A00119B25 /* XCRemoteSwiftPackageReference "Reachability" */,
+				251B3D372A121A6A00119B25 /* XCRemoteSwiftPackageReference "PopupView" */,
+				251B3D3A2A121A7900119B25 /* XCRemoteSwiftPackageReference "SwiftToast" */,
+				251B3D3B2A121B0100119B25 /* XCRemoteSwiftPackageReference "toast-swift" */,
+			);
 			productRefGroup = 251B3CFC2A11EF5C00119B25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +285,7 @@
 			files = (
 				251B3D032A11EF5C00119B25 /* ViewController.swift in Sources */,
 				251B3CFF2A11EF5C00119B25 /* AppDelegate.swift in Sources */,
+				251B3D3D2A121B4400119B25 /* PrinterCategory.swift in Sources */,
 				251B3D012A11EF5C00119B25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +650,80 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		251B3D2E2A121A3A00119B25 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";
+			requirement = {
+				branch = 1.6.0;
+				kind = branch;
+			};
+		};
+		251B3D312A121A4700119B25 /* XCRemoteSwiftPackageReference "bluejay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steamclock/bluejay.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		251B3D342A121A5A00119B25 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		251B3D372A121A6A00119B25 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		251B3D3A2A121A7900119B25 /* XCRemoteSwiftPackageReference "SwiftToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/damboscolo/SwiftToast";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		251B3D3B2A121B0100119B25 /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		251B3D2F2A121A3A00119B25 /* SPIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251B3D2E2A121A3A00119B25 /* XCRemoteSwiftPackageReference "SPIndicator" */;
+			productName = SPIndicator;
+		};
+		251B3D322A121A4700119B25 /* Bluejay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251B3D312A121A4700119B25 /* XCRemoteSwiftPackageReference "bluejay" */;
+			productName = Bluejay;
+		};
+		251B3D352A121A5A00119B25 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251B3D342A121A5A00119B25 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		251B3D382A121A6A00119B25 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251B3D372A121A6A00119B25 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 251B3CF32A11EF5C00119B25 /* Project object */;
 }
